@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="logo">Logo</a>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="#ProjectsSection">Projects</a></li>
+                <li><a href="#skillsSection">Skills</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Full-Stack <br>Developer</h1>
+        
+            <p>Computer engineering student focused on building modern full-stack 
+                web applications and continuously improving my development skills.</p>
+                <p>Focused on creating clean, responsive, and scalable web applications.</p>
+
+                <button class="btn">Lets Connect</button>
+        </div>
+        <div class="hero-right">
+                    <img src="Images/KhaledImage.jpeg" alt="Khaled Image"
+                     class="avatar bouncing-animation">
+                </div>
+    </section>
+
+    <section id="ProjectsSection" class="Projects">
+        <h2>Projects</h2>
+        <div class="Project-grid">
+            <div class="Project-card">
+                <img src="Images/image.png" alt="" loading="lazy">
+                <div class="project-card-content">
+                    <h3>Driving License Management System</h3>
+                    <p>Project description goes here.</p>
+                    <span>Tech Stack: C# .NET SQLServer Windows Forms</span>
+                            <a href="#" class="read-more"
+           onclick="document.getElementById('project1').showModal(); return false;">Read More</a>
+                </div>
+             </div>
+              <div class="Project-card">
+                world
+            </div>
+               <div class="Project-card">
+                world
+            </div>
+            </div>
+           
+        </div>
+
+
+<dialog id="project1" aria-labelledby="story1-title">
+    <button class="Close-btn" onclick="this.parentElement.close()" aria-label="Close story">✕</button>
+    <img src="Images/image.png" alt="The Last Train full">
+    <h2 id="story1-title">The Last Train</h2>
+    <!-- Prose content -->
+     <p>eifjeiojfooooooooooj
+        efiejfeijf
+        jeifjeojfef
+        ejfeifjeojf
+     </p>
+  </dialog>
+      
+    </section>
+
+    <section id="skillsSection" class="skills-section">
+        <h2>Skills</h2>
+    <div class="skills-carsoul">
+        <div class="skills-container">
+
+       <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+        </div>
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+           <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+          </div>
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+          </div>
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
+             </div>
+        
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+          </div>
+         
+        </div>
+
+        <div class="skills-container">
+
+       <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+        </div>
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+          </div>
+            <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+          </div>
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"  />
+          </div>
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
+             </div>
+       
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+          </div>
+           
+        </div>
+    </div>
+        
+    </section>
+
+    <section id="ContactSection" class="Contact-section">
+        <h2>Contact Me</h2>
+        <div class="Contact-container">
+            <input type="Enter your Name" class="tb" placeholder="Enter your Name">
+            <input type="Enter your Email" class="tb" placeholder="Enter your Email">
+            <input type="text" class="tb" placeholder="Enter your Phone No." >
+            <textarea name="message" id="" placeholder="Enter your Message" class="tb"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+          <p>&copy; 2026 Khaled Hassan. All rights reserved.</p>
+          
+        <div class="social-media">
+            <a href="" target="_blank" title="Visit my X account">
+            <svg class="social-media-icon"><use href="Images/sprite.svg#icon-x"></use></svg>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+      <svg class="social-media-icon"><use href="Images/sprite.svg#icon-linkedin"></use></svg>
+    </a>
+    <a href="" target="_blank">
+      <svg class="social-media-icon"><use href="Images/sprite.svg#icon-github"></use></svg>
+    </a>
+    <a href="" target="_blank">
+      <svg class="social-media-icon"><use href="Images/sprite.svg#icon-instagram"></use></svg>
+    </a>
+        </div>
+    </footer>
+</body>
+</html>
