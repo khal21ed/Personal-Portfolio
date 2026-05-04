@@ -14,7 +14,7 @@
         <nav class="navbar">
             <a href="" class="logo">Logo</a>
             <ul class="menu">
-                <li><a href="">Home</a></li>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#ProjectsSection">Projects</a></li>
                 <li><a href="#skillsSection">Skills</a></li>
                 <li><a href="#footer">Contact</a></li>
@@ -22,9 +22,9 @@
         </nav>
     </header> 
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-left">
-            <h1>Full-Stack <br>Developer</h1>
+            <h1>Khaled Hassan <br>Web Developer</h1>
         
             <p>Computer engineering student focused on building modern full-stack 
                 web applications and continuously improving my development skills.</p>
@@ -45,17 +45,17 @@
                 <img src="Images/image.png" alt="" loading="lazy">
                 <div class="project-card-content">
                     <h3>Driving License Management System</h3>
-                    <p>Project description goes here.</p>
+                    <p>A desktop application that simulates the workflow of a driving license management system.</p>
                     <span>Tech Stack: C# .NET SQLServer Windows Forms</span>
                             <a href="#" class="read-more"
            onclick="document.getElementById('project1').showModal(); return false;">Read More</a>
                 </div>
              </div>
               <div class="Project-card">
-                world
+                Future Project
             </div>
                <div class="Project-card">
-                world
+                Future Project
             </div>
             </div>
            
@@ -65,13 +65,13 @@
 <dialog id="project1" aria-labelledby="story1-title">
     <button class="Close-btn" onclick="this.parentElement.close()" aria-label="Close story">✕</button>
     <img src="Images/image.png" alt="The Last Train full">
-    <h2 id="story1-title">The Last Train</h2>
+    <h2 >Driving License Management System</h2>
     <!-- Prose content -->
-     <p>eifjeiojfooooooooooj
-        efiejfeijf
-        jeifjeojfef
-        ejfeifjeojf
+     <p>
+      A desktop application that simulates the workflow of a driving license management system.
+The system allows managing applicants, issuing and renewing licenses, and handling different types of tests required for an applicant to obtain a driving license through an easy-to-use UI.
      </p>
+     <a href="https://github.com/khal21ed/DVLD" target="_blank">View on GitHub</a>
   </dialog>
       
     </section>
@@ -154,16 +154,36 @@
             <a href="" target="_blank" title="Visit my X account">
             <svg class="social-media-icon"><use href="Images/sprite.svg#icon-x"></use></svg>
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+            <a href="https://www.linkedin.com/in/khaled-hassan-dev" target="_blank">
       <svg class="social-media-icon"><use href="Images/sprite.svg#icon-linkedin"></use></svg>
     </a>
-    <a href="" target="_blank">
+    <a href="https://github.com/khal21ed" target="_blank">
       <svg class="social-media-icon"><use href="Images/sprite.svg#icon-github"></use></svg>
     </a>
-    <a href="" target="_blank">
+    <a href="https://www.instagram.com/khaled.codes/" target="_blank">
       <svg class="social-media-icon"><use href="Images/sprite.svg#icon-instagram"></use></svg>
     </a>
         </div>
     </footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const card = entry.target;
+      card.classList.add('visible');
+      card.addEventListener('animationend', () => {
+        card.classList.remove('visible');
+        card.classList.add('done');
+      }, { once: true });
+      observer.unobserve(card);
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.Project-card').forEach((card, i) => {
+    card.style.animationDelay = `${i * 0.15}s`;
+    observer.observe(card);
+  });
+</script>
 </body>
 </html>
